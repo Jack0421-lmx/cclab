@@ -5,95 +5,131 @@ Project A: Generative Creatures
 CCLaboratories Biodiversity Atlas 
 */
 
-body {
-    background-color: white;
-    color: DimGray;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    line-height: 1.5em;
+body{
+
+margin:0;
+
+background:#f6f1e9;
+
+font-family: "Helvetica", "PingFang SC", "Noto Sans SC", sans-serif;
+
+color:#222;
+
 }
+
 
 /* title */
-#title-wrapper {
-    text-align: center;
+
+#title-wrapper{
+
+text-align:center;
+
+padding-top:80px;
+
+padding-bottom:40px;
+
 }
 
-.headline {
-    font-size: 3em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 600;
-    margin-top: 80px;
-    margin-bottom: 60px;
+
+.headline{
+
+font-size:90px;
+
+letter-spacing:10px;
+
+color:#b30000;
+
+margin:0;
+
 }
 
-/* main content */
-#main-wrapper {
-    width: 800px;
-    position: relative;
-    margin: auto;
+
+.subtitle{
+
+font-size:18px;
+
+letter-spacing:3px;
+
+color:#444;
+
+margin-top:10px;
+
 }
 
-.black {
-    color: black;
+
+/* canvas */
+
+#p5-canvas-container{
+
+display:flex;
+
+justify-content:center;
+
+margin-top:50px;
+
+margin-bottom:60px;
+
 }
 
-.red {
-    color: DeepPink;
+
+/* info */
+
+.info-section{
+
+display:flex;
+
+max-width:900px;
+
+margin:auto;
+
+gap:60px;
+
 }
 
-.green {
-    color: LightSeaGreen;
+
+.column{
+
+flex:1;
+
 }
 
-.yellow {
-    color: GoldenRod;
+
+h3{
+
+color:#b30000;
+
+letter-spacing:1px;
+
 }
 
-.two-columns {
-    display: flex;
+
+/* story */
+
+.story{
+
+max-width:900px;
+
+margin:auto;
+
+margin-top:60px;
+
+line-height:1.6;
+
 }
 
-.left {
-    width: 50%;
-    padding: 0px 10px 0px 0px;
-}
 
-.right {
-    width: 50%;
-    padding: 0px 0px 0px 10px;
-}
+/* footer */
 
-#footer {
-    text-align: center;
-    font-size: 0.7em;
-    margin-top: 60px;
-    padding-bottom: 30px;
-}
+#footer{
 
-/* home button */
-#home a {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    padding: 5px 10px;
-    color: dimgrey;
-    border: solid grey 0.5px;
-    font-size: 0.6em;
-    text-decoration: none;
-}
+margin-top:100px;
 
-#home a:hover {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-}
+text-align:center;
 
-/* p5.js sketch */
-canvas {
-    display: block;
-}
+padding:30px;
 
-#p5-canvas-container {
-    margin: auto;
-    width: 800px;
+border-top:1px solid #ccc;
+
+color:#777;
+
 }
